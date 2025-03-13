@@ -1,0 +1,7 @@
+This project focuses on the development of a real-time face detection system leveraging computer vision techniques. The workflow begins with capturing and preprocessing self-collected images using OpenCV, ensuring high-quality input data for training. Each image undergoes annotation using LabelMe, followed by dataset splitting into training, testing, and validation sets (70:30:30).
+
+To enhance the robustness of the model, Albumentations is employed for image augmentation, applying transformations to both images and their corresponding labels. The augmentation pipeline is systematically executed before loading the processed dataset into TensorFlow. The final dataset is structured by combining images and labels for optimal model training.
+
+For the deep learning model, VGG16 is used as a pre-trained base model, fine-tuned for face detection. The training process incorporates classification loss for detecting faces and regression loss for bounding box localization. After thorough evaluation on test data, the trained model is saved and deployed for real-time inference, enabling accurate face detection on live input streams.
+
+This implementation demonstrates the power of deep learning and computer vision in real-time object detection, making it a valuable solution for applications requiring fast and accurate face recognition.
