@@ -1,4 +1,4 @@
-This project focuses on the development of a real-time face detection system leveraging computer vision techniques. The workflow begins with capturing and preprocessing self-collected images using OpenCV, ensuring high-quality input data for training. Each image undergoes annotation using LabelMe, followed by dataset splitting into training, testing, and validation sets (70:30:30).
+This project focuses on the development of a real-time face detection system leveraging computer vision techniques. The workflow begins with capturing and preprocessing self-collected images using OpenCV, ensuring high-quality input data for training. Each image undergoes annotation using LabelMe, followed by dataset splitting into training, testing, and validation sets.
 
 To enhance the robustness of the model, Albumentations is employed for image augmentation, applying transformations to both images and their corresponding labels. The augmentation pipeline is systematically executed before loading the processed dataset into TensorFlow. The final dataset is structured by combining images and labels for optimal model training.
 
